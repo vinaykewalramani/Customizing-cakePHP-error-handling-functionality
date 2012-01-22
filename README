@@ -11,16 +11,12 @@ App::uses('AppExceptionHandler', 'Lib');
 Step 3. Copy the AppExceptionHandler.php and paste it in app/Lib/
 This file contains all the logic and events for calling the error handling.
 
-Step 4. Run the errors.sql in your database
+Step 4. Download and run the errors.sql in your database
 errors table will be created
 This table is used to store all the errors in the database.
 
-Step 5. Copy the file error.php and paste it in app/models
+Step 5. Download the file error.php and move it to app/models
 
-Step 6. Copy the file errors_controller.php and paste it in app/controller
+Step 6. Download the file errors_controller.php and move it to app/controller
 
-Step 7. Copy file exception.ctp and paste it in app/View/Layouts
-
-Step 8. Copy file unknown.ctp and paste it in app/View/Exception
-
-
+Step 7. Download the file exception.ctp and move it to app/View/Layouts
