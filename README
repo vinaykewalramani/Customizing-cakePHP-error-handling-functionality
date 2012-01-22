@@ -1,0 +1,26 @@
+cakePHP's error handling functionality
+
+Below are the steps to set up the error handling functionality
+
+Step 1.  In app/Config/core.php write the below line 
+Configure::write('Exception.handler', 'AppExceptionHandler::handle');
+
+Step 2. In app/Config/bootstrap.php write the below line
+App::uses('AppExceptionHandler', 'Lib');
+
+Step 3. Copy the AppExceptionHandler.php and paste it in app/Lib/
+This file contains all the logic and events for calling the error handling.
+
+Step 4. Run the errors.sql in your database
+errors table will be created
+This table is used to store all the errors in the database.
+
+Step 5. Copy the file error.php and paste it in app/models
+
+Step 6. Copy the file errors_controller.php and paste it in app/controller
+
+Step 7. Copy file exception.ctp and paste it in app/View/Layouts
+
+Step 8. Copy file unknown.ctp and paste it in app/View/Exception
+
+
